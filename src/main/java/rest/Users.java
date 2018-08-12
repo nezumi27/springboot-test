@@ -8,6 +8,12 @@ import javax.persistence.Id;
 @Entity
 public class Users {
 
+    public Users(String name, String introduce, int old) {
+        this.name = name;
+        this.introduce = introduce;
+        this.old = old;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
